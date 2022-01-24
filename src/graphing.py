@@ -5,8 +5,8 @@ from scipy.optimize import curve_fit
 
 
 # Change the filename here
-# filename = 'DDM_newest.dat'
-filename = 'inputfiles/ps1micron_0.1mgmlDDM_Nanoparticles_MaxNc500.dat'
+filename = '../inputfiles/DDM_newest.dat'
+# filename = '../inputfiles/ps1micron_0.1mgmlDDM_Nanoparticles_MaxNc500.dat'
 
 
 

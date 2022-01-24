@@ -108,14 +108,14 @@ def ddm(stack, idts, maxNCouples=1000):
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 start_time = time.time()
 
-NFRAMES = 1065#3268#10895#21790#5400#10895#43580#10613#10635#10636#10615#10611#10609#10603#10623#10621#10472#10612#8761      #actually index of last frame counting from 0
-total_time_in_sec = 12#40#80#19.825608077099588#40#160#19.5612665#39.122533#40
+NFRAMES = 10656#3268#10895#21790#5400#10895#43580#10613#10635#10636#10615#10611#10609#10603#10623#10621#10472#10612#8761      #actually index of last frame counting from 0
+total_time_in_sec = 40#40#80#19.825608077099588#40#160#19.5612665#39.122533#40
 #stack = ImageStack(u'/Users/anand/code/python-ddm/AY014 256-256 160sec 63X/AY014 256-256 160sec 63X{:05d}.tif',NFRAMES)
 #outpath='/Users/anand/code/python-ddm/AY014 256-256 160sec 63X/a5norm_120/'
 # stack = ImageStack(u'/Users/harnoorsingh/Desktop/DDM/DDM-dataset/AY014 256-256 40sec 63X/AY014 256-256 40sec 63X{:05d}.tif',NFRAMES)
 # outpath='/Users/harnoorsingh/Desktop/DDM/DDM-output/output/'
-stack = ImageStack(u'/Users/harnoorsingh/Desktop/DDM/DDM-dataset/AY014 256-256 40sec 63X/AY014 256-256 40sec 63X{:05d}.tif',NFRAMES)
-outpath='/Users/harnoorsingh/Desktop/DDM/DDM-output/output/'
+stack = ImageStack(u'C:\\Users\\harno\\Desktop\\DDM-data\\AY014 256-256 40sec 63X\\AY014 256-256 40sec 63X\\AY014 256-256 40sec 63X{:05d}.tif',NFRAMES)
+outpath='C:\\Users\\harno\\Desktop\\DDM-data\\DDM-output\\output\\'
 
 #a1  = timeAveraged(stack, 10)
 #a2  = timeAveraged(stack, 50)
