@@ -8,6 +8,22 @@ Either enter full path or relative path of the file (relative to main.py)
 """
 
 
+fullSizeBox = 256
+"""
+Size of the sqaure image (in pixels) which was analyzed
+"""
+
+pixels_per_micrometre_squared = 6.5
+"""
+TODO
+"""
+
+magnification = 20
+"""
+TODO
+"""
+
+
 initial_parameters_monoexponential = [35, 0.5, 0.1]
 """
 Set initial parameters for monoexponential curve fitting
