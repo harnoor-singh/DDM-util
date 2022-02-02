@@ -1,6 +1,7 @@
 # Configure all variables here!
 
-filename = 'ps1micron_0.1mgmlDDM_Nanoparticles_MaxNc500.dat'
+filename = 'C:\\Users\\harno\\Desktop\\DDM-util\\inputfiles\\DDM_newest.dat'
+# filename = 'ps1micron_0.1mgmlDDM_Nanoparticles_MaxNc500.dat'
 """
 Filename for input data.
 Either enter full path or relative path of the file (relative to main.py)
@@ -16,7 +17,7 @@ I cannot change the order, because of how the scipy.optimize.curve_fit works
 The order matters!!!
 """
 
-initial_parameters_biexponential = [a, p, T1, T2, y0]
+initial_parameters_biexponential = [] # [a, p, T1, T2, y0]
 """
 Set initial parameters for biexponential curve fitting
 The equation for monoexponential is: a*(p*np.exp(-t/T1) + (1 - p)*np.exp(-t/T2)) + y0

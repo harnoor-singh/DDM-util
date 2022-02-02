@@ -10,7 +10,7 @@ import inputdata
 filename = inputdata.filename
 ip_monoexp = inputdata.initial_parameters_monoexponential
 ip_biexp = inputdata.initial_parameters_biexponential
-
+mono_or_bi = inputdata.mono_or_bi
 
 
 
@@ -80,6 +80,7 @@ def curveFit(func):
 	x_axis = time
 
 	if func == "mono":
+		initial_parameters = ip_monoexp
 		for index, item in enumerate(signal):
 			y_axis = item
 			popt, pcov = curve_fit(monoexponential, x_axis, y_axis, p0=initial_parameters)
@@ -87,6 +88,7 @@ def curveFit(func):
 			T1_array.append((1/popt[2]))
 			initial_parameters = [popt[0], popt[1], popt[2]]
 	elif func == "bi":
+		initial_parameters = ip_biexp
 		for index, item in enumerate(signal):
 			y_axis = item
 			popt, pcov = curve_fit(biexponential, x_axis, y_axis, p0=initial_parameters)
@@ -97,6 +99,9 @@ def curveFit(func):
 		print("There has been breaking changes to the code. Debug it.")
 
 	q_array = np.array([(2*math.pi*(x+1)/(256*6.5/20))**2 for x in range(0, 128)])
+	# Fullsizebox = 256
+	# pixels per micrometre**2 = 6.5
+	# magnification = 20
 	T1_array = np.array(T1_array)
 
 	plt.scatter(q_array, T1_array)
