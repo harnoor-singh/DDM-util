@@ -115,6 +115,7 @@ total_time_in_sec = 40#40#80#19.825608077099588#40#160#19.5612665#39.122533#40
 # stack = ImageStack(u'/Users/harnoorsingh/Desktop/DDM/DDM-dataset/AY014 256-256 40sec 63X/AY014 256-256 40sec 63X{:05d}.tif',NFRAMES)
 # outpath='/Users/harnoorsingh/Desktop/DDM/DDM-output/output/'
 stack = ImageStack(u'C:\\Users\\harno\\Desktop\\DDM-data\\AY014 256-256 40sec 63X\\AY014 256-256 40sec 63X\\AY014 256-256 40sec 63X{:05d}.tif',NFRAMES)
+type(stack)
 outpath='C:\\Users\\harno\\Desktop\\DDM-data\\DDM-output\\outputnew\\'
 
 #a1  = timeAveraged(stack, 10)
