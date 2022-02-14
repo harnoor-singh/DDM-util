@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # Ask the user for their name
 echo Welcome to DDM-util. 
 echo This is a utility to analyze images obtained by DDM!
