@@ -1,0 +1,39 @@
+Tasks
+
+-> Have a license, and give credit to Mathieu
+
+-> Write some code for biexponential scripts too
+
+-> Document installation of code, python, libraries, and all current python and library versions
+
+-> Document running code
+
+-> Order of main script (Pseudocode)
+	
+	DDM3.py
+	graphing.py
+	curvefit.py
+	selectpoints.py
+
+-> Write a separate main script for analyzing rectangular images
+	
+	cropping.py
+	DDM3.py
+	graphing.py
+	curvefit.py
+	selectpoints.py
+
+-> Write about possible optimizations (for future projects)
+	- A lot of possible optimizations open up once you can fully understand DDM code 
+		(refer to JPEG compression)
+	- Maybe you can limit to size of data-points 
+		(like using float32 instead of float64). This can be done using NumPy
+	- Maybe preprocessing images using convolution or pooling 
+		(but this will surely lead to loss of some data. Only do this if you understand the risks and benefits)
+	- Using paralled computing / multithreading
+	- Maybe do the DDM analysis in C++
+
+
+
+
+	
