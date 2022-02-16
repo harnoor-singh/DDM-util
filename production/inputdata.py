@@ -1,6 +1,6 @@
 # Configure all variables here!
 
-filename = 'C:\\Users\\harno\\Desktop\\DDM-util\\inputfiles\\DDM_newest.dat'
+filename = 'C:\\Users\\harno\\Desktop\\DDM-util\\inputfiles\\DDM_Nanoparticles_MaxNc500.dat'
 # filename = 'ps1micron_0.1mgmlDDM_Nanoparticles_MaxNc500.dat'
 """
 Filename for input data.
