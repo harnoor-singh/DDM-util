@@ -5,7 +5,7 @@ import matplotlib.widgets as mwidgets
 from scipy.optimize import curve_fit
 from scipy.stats import linregress
 
-data = np.load("test_data.npy")
+data = np.load("data.npy")
 
 q_array = [item[0] for item in data]
 T1_array = [item[1] for item in data]
