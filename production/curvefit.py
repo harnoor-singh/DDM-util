@@ -49,7 +49,7 @@ def curveFit(func):
 		for index, item in enumerate(signal):
 			y_axis = item
 			popt, pcov = curve_fit(monoexponential, x_axis, y_axis, p0=initial_parameters)
-			answer = np.array(monoexponential(x_axis, popt[0], popt[1], popt[2]))
+			# answer = np.array(monoexponential(x_axis, popt[0], popt[1], popt[2]))
 			T1_array.append((1/popt[2]))
 			initial_parameters = [popt[0], popt[1], popt[2]]
 	elif func == "bi":
@@ -57,7 +57,7 @@ def curveFit(func):
 		for index, item in enumerate(signal):
 			y_axis = item
 			popt, pcov = curve_fit(biexponential, x_axis, y_axis, p0=initial_parameters)
-			answer = np.array(biexponential(x_axis, popt[0], popt[1], popt[2], popt[3], popt[4]))
+			# answer = np.array(biexponential(x_axis, popt[0], popt[1], popt[2], popt[3], popt[4]))
 			T1_array.append((1/popt[2]))
 			initial_parameters = [popt[0], popt[1], popt[2], popt[3], popt[4]]
 	else:
@@ -68,6 +68,9 @@ def curveFit(func):
 	q_array is actually q squared.
 	"""
 	T1_array = np.array(T1_array)
+
+	np.save('q_array', q_array)
+	np.save('T1_array', T1_array)
 
 	plt.scatter(q_array, T1_array)
 	plt.grid()

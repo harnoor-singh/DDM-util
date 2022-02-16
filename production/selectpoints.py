@@ -5,10 +5,13 @@ import matplotlib.widgets as mwidgets
 from scipy.optimize import curve_fit
 from scipy.stats import linregress
 
-data = np.load("data.npy")
 
-q_array = [item[0] for item in data]
-T1_array = [item[1] for item in data]
+q_array = np.load('q_array.npy')
+T1_array = np.load('T1_array.npy')
+
+data = []
+for i in range(len(q_array)):
+	data.append([q_array[i], T1_array[i]])
 
 fig, ax = plt.subplots()
 ax.scatter(q_array, T1_array)
@@ -26,5 +29,6 @@ def onselect(eclick, erelease):
 
 props = dict(facecolor='lightsteelblue', alpha=0.5)
 rect = mwidgets.RectangleSelector(ax, onselect, interactive=True, props=props)
+plt.grid()
 plt.show()
 
